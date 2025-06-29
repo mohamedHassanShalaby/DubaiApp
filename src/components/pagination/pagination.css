@@ -1,0 +1,44 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+}
+.pagination .page {
+    width: 50px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid gray;
+    color: var(--primary-color);
+}
+.pagination .page.prev,
+.pagination .page.next {
+    width: max-content;
+    padding: 0 10px;
+}
+.page.prev {
+    border-radius: 7px 0 0 7px;
+    -webkit-border-radius: 7px 0 0 7px;
+    -moz-border-radius: 7px 0 0 7px;
+    -ms-border-radius: 7px 0 0 7px;
+    -o-border-radius: 7px 0 0 7px;
+}
+.page.next {
+    border-radius: 0 7px 7px 0;
+    -webkit-border-radius: 0 7px 7px 0;
+    -moz-border-radius: 0 7px 7px 0;
+    -ms-border-radius: 0 7px 7px 0;
+    -o-border-radius: 0 7px 7px 0;
+}
+.next:disabled,
+.prev:disabled {
+    cursor: not-allowed;
+}
+.active {
+    background-color: rgb(165, 162, 162);
+}
